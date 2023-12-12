@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="view_prime_number_form" model="ir.ui.view">
+            <field name="name">prime.number.form</field>
+            <field name="model">prime.number</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="input_number"/>
+                            <field name="output_primes" widget="text" options="{'readonly': True}"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_prime_number" model="ir.actions.act_window">
+            <field name="name">Prime Number</field>
+            <field name="res_model">prime.number</field>
+            <field name="view_mode">form</field>
+        </record>
+        <menuitem id="menu_prime_number" name="Prime Number" parent="menu_material" action="action_prime_number" sequence="20"/>
+
+    </data>
+</odoo>

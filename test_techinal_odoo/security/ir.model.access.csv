@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_material,access_material,model_material,,1,1,1,1
+access_prime_number,access_prime_number,model_prime_number,,1,1,1,1
+access_digit_finder,access_digit_finder,model_digit_finder,,1,1,1,1
